@@ -13,7 +13,7 @@ public class UserDao {
 		super();
 		this.conn = conn;
 	}
-	public boolean UserRegister(User u) {
+	public boolean register(User u) {
 		boolean f= false;
 			try {
 				String sql="Insert into user_dtls(full_name,email,password) values(?,?,?)";

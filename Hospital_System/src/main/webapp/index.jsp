@@ -16,15 +16,16 @@
 </head>
 <body>
 
-<% Connection con= DBConnection.getConn();
-	out.print(con); 
-	 /* if(con!=null){
+<%--//For checking Db connection is establish or not
+ <%Connection con= DBConnection.getConn(); 
+	/* out.print(con); */
+	/* /* /* if(con!=null){
 		out.print(" Established");
 	}
 	else{
 		out.println("Not Established");
-	}  */
-%>
+	} */ */ */
+%> --%>
 	<%@include file="component/navbar.jsp"%>
 	<div id="carouselExampleIndicators" class="carousel slide"
 		data-bs-ride="carousel">

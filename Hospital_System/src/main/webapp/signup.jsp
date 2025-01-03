@@ -23,7 +23,7 @@
 				<div class="card paint-card">
 					<div class="card-body">
 						<h4 class="fs-4 text-center mb-4">User Registration Form</h4>
-						<form action="#" method="post">
+						<form action="user_register" method="post">
 							<div class="mb-3">
 								<label for="Full Name " class="form-label">Full Name</label> <input
 									required name="full name" type="full name" class="form-control"
