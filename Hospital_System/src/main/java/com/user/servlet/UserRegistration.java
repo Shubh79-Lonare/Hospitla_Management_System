@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.dao.UserDao;
 import com.db.DBConnection;
@@ -19,17 +20,25 @@ public class UserRegistration extends HttpServlet {
 			String fullName= request.getParameter("full name");
 			String email=request.getParameter("email");
 			String password=request.getParameter("password");
+			
 			User u= new User(fullName, email, password);
 			
 			UserDao dao= new UserDao(DBConnection.getConn());
+			
+			HttpSession session= request.getSession();
+			
 			boolean f=dao.register(u);
-			if(f==true) {
-				System.out.println("Data inserted Successfully");
+			
+			if(f) {
+				session.setAttribute("sucMsg", "Register Successfully");
+				response.sendRedirect("signup.jsp");
 			}
 			else {
-				System.out.println("Something Wrong on Server");
+				session.setAttribute("errorMsg", "Something Went Wrong");
+				response.sendRedirect("signup.jsp");
 			}
-			
+			System.out.println("Value of f: " + f);
+
 			
 			
 			
