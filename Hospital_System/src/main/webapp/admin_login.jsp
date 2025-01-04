@@ -26,9 +26,9 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);}
                     
                     <h4 class="fs-4 text-center mb-4">Admin Login</h4>
                 
-                    <c:if test="${not empty sucMsg }">
-							<p class="text-center text-success fs-3">${sucMsg}</p>
-							<c:remove var="sucMsg" scope="session"/>
+                    <c:if test="${not empty succMsg }">
+							<p class="text-center text-success fs-3">${succMsg}</p>
+							<c:remove var="succMsg" scope="session"/>
 							</c:if>
 						
 						<c:if test="${not empty errorMsg }">
