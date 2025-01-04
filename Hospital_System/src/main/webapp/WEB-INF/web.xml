@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.user.servlet.UserRegistration</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<display-name>AdminLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.admin.servlet.AdminLogin</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
   	<url-pattern>/UserRegistration</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<url-pattern>/AdminLogin</url-pattern>
   </servlet-mapping>
 </web-app>

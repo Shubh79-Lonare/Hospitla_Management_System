@@ -12,7 +12,30 @@
 .paint-card {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-</style>
+/* new trying css */
+<style>
+        .card {
+            border: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card i {
+            font-size: 3rem;
+            color: #198754; /* Bootstrap success green */
+        }
+        .card p {
+            margin: 0;
+        }
+        .number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #198754;
+        }
+    </style>
+<!-- </style> -->
 </head>
 <body>
 
