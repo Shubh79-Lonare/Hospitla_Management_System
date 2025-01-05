@@ -40,6 +40,7 @@
 
 </head>
 <body>
+
     <%@include file="navbar.jsp" %>
     
     <div class="container py-5">

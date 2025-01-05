@@ -36,5 +36,30 @@ public class UserDao {
 		
 		return f;
 	}
+	
+	public User login(String em, String psw) {
+		User u= null;
+		try {
+			String sql="Select * from user_dtls where email=? and password=?";
+			PreparedStatement ps= conn.prepareStatement(sql);
+			ps.setString(1,em);
+			ps.setString(2,psw);
+			
+			ResultSet rs= ps.executeQuery();
+			
+			while(rs.next()) {
+				u=new User();
+				u.setId(rs.getInt(1));
+				u.setFullName(rs.getString(2));
+				u.setEmail(rs.getString(3));
+				u.setPassword(rs.getString(4));
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return u;
+	}
+	
 
 }

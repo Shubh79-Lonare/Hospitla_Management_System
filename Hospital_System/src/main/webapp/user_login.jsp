@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,21 +24,34 @@
 				<div class="card paint-card">
 					<div class="card-body">
 						<h4 class="fs-4 text-center mb-4">User Login</h4>
-						<form action="#" method="post">
+						<c:if test="${not empty succMsg }">
+							<p class="text-center text-success fs-3">${succMsg}</p>
+							<c:remove var="succMsg" scope="session" />
+						</c:if>
+
+						<c:if test="${not empty errorMsg }">
+							<p class="text-center text-danger fs-5">${errorMsg}</p>
+							<c:remove var="errorMsg" scope="session" />
+						</c:if>
+						
+						<form action="userLogin" method="post">
 							<div class="mb-3">
 								<label for="email" class="form-label">Email address</label> <input
 									required name="email" type="email" class="form-control"
 									id="email" placeholder="Enter your email">
 							</div>
+							
 							<div class="mb-3">
 								<label for="password" class="form-label">Password</label> <input
 									required name="password" type="password" class="form-control"
 									id="password" placeholder="Enter your password">
 							</div>
+							
 							<button type="submit" class="btn bg-success text-white col-12">Login</button>
 						</form>
-						<br> Don't have an account?<a href="signup.jsp" class="text-decoration-none">
-							create one </a>
+					
+						<br> Don't have an account?<a href="signup.jsp"
+							class="text-decoration-none"> create one </a>
 					</div>
 				</div>
 			</div>

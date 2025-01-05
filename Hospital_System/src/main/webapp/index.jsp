@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@page import ="com.db.DBConnection" %>
-	<%@page import ="java.sql.Connection" %>
+<%@page import="com.db.DBConnection"%>
+<%@page import="java.sql.Connection"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,33 +13,37 @@
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 /* new trying css */
-<style>
-        .card {
-            border: none;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card i {
-            font-size: 3rem;
-            color: #198754; /* Bootstrap success green */
-        }
-        .card p {
-            margin: 0;
-        }
-        .number {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #198754;
-        }
-    </style>
+<
+style>.card {
+	border: none;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card i {
+	font-size: 3rem;
+	color: #198754; /* Bootstrap success green */
+}
+
+.card p {
+	margin: 0;
+}
+
+.number {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #198754;
+}
+</style>
 <!-- </style> -->
 </head>
 <body>
 
-<%--//For checking Db connection is establish or not
+	<%--//For checking Db connection is establish or not
  <%Connection con= DBConnection.getConn(); 
 	/* out.print(con); */
 	/* /* /* if(con!=null){
@@ -89,7 +93,7 @@
 
 	<!-- key feateures -->
 	<div class="container my-5">
-		<h2 class="text-center mb-4">Key Features of our Hospital</h2>
+		<h2 class="text-center mb-4">KEY FEATURES OF OUR HOSPITAL</h2>
 		<div class="row align-items-center">
 			<!-- Cards Section -->
 			<div class="col-md-8">
@@ -99,9 +103,13 @@
 						<div class="card shadow-sm">
 							<div class="card paint-card">
 								<div class="card-body">
-									<h5 class="card-title">100% Safety</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet,
-										consectetur adipiscing elit. Voluptatem, inventore.</p>
+									<h5 class="card-title"><u><b>100% SAFETY</b></u>:-</h5>
+									<p class="card-text">Your health and safety are our top
+										priorities. Our hospital adheres to the highest standards of
+										hygiene, sterilization, and patient care. With
+										state-of-the-art equipment and dedicated medical staff, we
+										ensure a secure and risk-free environment for all. Trust us
+										for your healthcare needs!</p>
 								</div>
 							</div>
 						</div>
@@ -110,9 +118,13 @@
 						<div class="card shadow-sm">
 							<div class="card paint-card">
 								<div class="card-body">
-									<h5 class="card-title">Clean Environment</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet,
-										consectetur adipiscing elit. Voluptatem, inventore.</p>
+									<h5 class="card-title"><u><b>CLEAN ENVIRONMENT</b></u>:-</h5>
+									<p class="card-text">We maintain a spotless and sanitized
+										environment to ensure the safety and comfort of our patients
+										and visitors. Regular cleaning, disinfection protocols, and
+										waste management practices are strictly followed to uphold the
+										highest standards of hygiene. Experience care in a clean and
+										healthy space!</p>
 								</div>
 							</div>
 						</div>
@@ -122,9 +134,12 @@
 						<div class="card shadow-sm">
 							<div class="card paint-card">
 								<div class="card-body">
-									<h5 class="card-title">Friendly Doctors</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet,
-										consectetur adipiscing elit. Voluptatem, inventore.</p>
+									<h5 class="card-title"><u> <b>FRIENDLY DOCTORS </b></u>:- </h5>
+									<p class="card-text">Our team of doctors is not only highly
+										qualified but also compassionate and approachable. They take
+										the time to listen, understand, and provide personalized care,
+										ensuring you feel comfortable and supported throughout your
+										journey to recovery.</p>
 								</div>
 							</div>
 						</div>
@@ -133,9 +148,12 @@
 						<div class="card shadow-sm">
 							<div class="card paint-card">
 								<div class="card-body">
-									<h5 class="card-title">Medical Research</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet,
-										consectetur adipiscing elit. Voluptatem, inventore.</p>
+									<h5 class="card-title"><u> <b>MEDICAL RESEARCH </b></u>:- </h5>
+									<p class="card-text">Dedicated to Medical Research Our
+										hospital focuses on finding new ways to improve healthcare
+										through research. We work hard to discover better treatments
+										and technologies to help our patients and advance medical
+										knowledge.</p>
 								</div>
 							</div>
 						</div>
@@ -156,7 +174,7 @@
 	<!-- Doctor's Image Section -->
 	<hr>
 	<div class="container my-5">
-		<h2 class="text-center mb-4">Our Team</h2>
+		<h2 class="text-center mb-4">OUR TEAM</h2>
 		<div class="row text-center">
 			<!-- Team Member 1 -->
 			<div class="col-md-3 mb-4">
@@ -164,7 +182,7 @@
 					<img src="Images/doc1.jpg" class="card-img-top" alt="Samuani Simi"
 						style="height: 300px; object-fit: cover;">
 					<div class="card-body">
-						<h5 class="card-title">Samuani Simi</h5>
+						<h5 class="card-title">Dr. Samuani Simi</h5>
 						<p class="card-text">(CEO & Chairman)</p>
 					</div>
 				</div>
@@ -186,7 +204,7 @@
 					<img src="Images/doc3.jpg" class="card-img-top"
 						alt="Dr. Niuise Paule" style="height: 300px; object-fit: cover;">
 					<div class="card-body">
-						<h5 class="card-title">Dr.Danni D</h5>
+						<h5 class="card-title">Dr. Danni D</h5>
 						<p class="card-text">(Chief Doctor)</p>
 					</div>
 				</div>
