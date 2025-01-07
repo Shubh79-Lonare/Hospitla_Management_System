@@ -34,6 +34,18 @@
   	<description></description>
   	<servlet-class>com.user.servlet.userLogout</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AddSpecialist</servlet-name>
+  	<display-name>AddSpecialist</display-name>
+  	<description></description>
+  	<servlet-class>com.admin.servlet.AddSpecialist</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddDoctor</servlet-name>
+  	<display-name>AddDoctor</display-name>
+  	<description></description>
+  	<servlet-class>com.admin.servlet.AddDoctor</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
   	<url-pattern>/UserRegistration</url-pattern>
@@ -53,5 +65,13 @@
   <servlet-mapping>
   	<servlet-name>userLogout</servlet-name>
   	<url-pattern>/userLogout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddSpecialist</servlet-name>
+  	<url-pattern>/AddSpecialist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddDoctor</servlet-name>
+  	<url-pattern>/AddDoctor</url-pattern>
   </servlet-mapping>
 </web-app>
