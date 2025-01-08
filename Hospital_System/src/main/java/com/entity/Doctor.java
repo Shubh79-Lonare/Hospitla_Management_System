@@ -24,6 +24,20 @@ public class Doctor {
 		this.mobNo = mobNo;
 		this.password = password;
 	}
+	
+	public Doctor(int id, String fullName, String dob, String qualification, String specialist, String emali,
+			String mobNo, String password) {
+		super();
+		this.id = id;
+		this.fullName = fullName;
+		this.dob = dob;
+		this.qualification = qualification;
+		this.specialist = specialist;
+		this.emali = emali;
+		this.mobNo = mobNo;
+		this.password = password;
+	} 
+	
 	public int getId() {
 		return id;
 	}

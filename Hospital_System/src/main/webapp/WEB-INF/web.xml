@@ -46,6 +46,18 @@
   	<description></description>
   	<servlet-class>com.admin.servlet.AddDoctor</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>updateDoctor</servlet-name>
+  	<display-name>updateDoctor</display-name>
+  	<description></description>
+  	<servlet-class>com.admin.servlet.updateDoctor</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteDoctor</servlet-name>
+  	<display-name>DeleteDoctor</display-name>
+  	<description></description>
+  	<servlet-class>com.admin.servlet.DeleteDoctor</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
   	<url-pattern>/UserRegistration</url-pattern>
@@ -73,5 +85,13 @@
   <servlet-mapping>
   	<servlet-name>AddDoctor</servlet-name>
   	<url-pattern>/AddDoctor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>updateDoctor</servlet-name>
+  	<url-pattern>/updateDoctor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteDoctor</servlet-name>
+  	<url-pattern>/DeleteDoctor</url-pattern>
   </servlet-mapping>
 </web-app>

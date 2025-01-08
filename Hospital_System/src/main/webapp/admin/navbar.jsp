@@ -19,7 +19,10 @@
 						class="fa-sharp-duotone fa-solid fa-right-to-bracket"></i>HOME</a></li>
 
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="doctor.jsp">DOCTOR</a></li>
+					aria-current="page" href="doctor.jsp"> ADD DOCTOR</a></li>
+
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="view_doctor.jsp">VIEW DOCTOR</a></li>
 
 				<li class="nav-item"><a class="nav-link active"
 					aria-current="page" href="patient.jsp">PATIENT</a></li>
@@ -50,7 +53,7 @@
 					aria-expanded="false">Admin</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 					<li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
-				
+
 				</ul>
 			</div>
 		</div>
