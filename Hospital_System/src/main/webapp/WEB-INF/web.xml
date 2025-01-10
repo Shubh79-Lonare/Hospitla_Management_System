@@ -58,6 +58,18 @@
   	<description></description>
   	<servlet-class>com.admin.servlet.DeleteDoctor</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DoctorLogin</servlet-name>
+  	<display-name>DoctorLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.doctor.servlet.DoctorLogin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DoctorLogout</servlet-name>
+  	<display-name>DoctorLogout</display-name>
+  	<description></description>
+  	<servlet-class>com.doctor.servlet.DoctorLogout</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
   	<url-pattern>/UserRegistration</url-pattern>
@@ -93,5 +105,13 @@
   <servlet-mapping>
   	<servlet-name>DeleteDoctor</servlet-name>
   	<url-pattern>/DeleteDoctor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DoctorLogin</servlet-name>
+  	<url-pattern>/DoctorLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DoctorLogout</servlet-name>
+  	<url-pattern>/DoctorLogout</url-pattern>
   </servlet-mapping>
 </web-app>
