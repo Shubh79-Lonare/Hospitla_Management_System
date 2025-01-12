@@ -70,6 +70,12 @@
   	<description></description>
   	<servlet-class>com.doctor.servlet.DoctorLogout</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AppointmentServlet</servlet-name>
+  	<display-name>AppointmentServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.user.servlet.AppointmentServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
   	<url-pattern>/UserRegistration</url-pattern>
@@ -113,5 +119,9 @@
   <servlet-mapping>
   	<servlet-name>DoctorLogout</servlet-name>
   	<url-pattern>/DoctorLogout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AppointmentServlet</servlet-name>
+  	<url-pattern>/AppointmentServlet</url-pattern>
   </servlet-mapping>
 </web-app>
