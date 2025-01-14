@@ -98,7 +98,7 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);}
 									if("Pendint".equals(ap.getStatus())){
 									%>
 									
-									<a href="#"class="btn btn-sm btn-warming"> Pending </a>
+									<a href="#"class="btn btn-sm btn-warning"> Pending </a>
 										<%} else{%>
 										<%=ap.getStatus() %>
 										
