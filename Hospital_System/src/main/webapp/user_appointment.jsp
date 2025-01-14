@@ -10,7 +10,7 @@
 <%@page import="com.dao.DoctorDao"%>
 <!DOCTYPE html>
 <html>
-
+	
 <head>
     <meta charset="ISO-8859-1">
     <title>User Appointment</title>
@@ -22,7 +22,7 @@
         }
 
         .backImg {
-            background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("img/hospital.jpg");
+            background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("Images/backHos.jpg");
             height: 20vh;
             width: 100%;
             background-size: cover;
@@ -146,6 +146,6 @@
             </div>
         </div>
     </div>
-
+<%@include file="component/footer.jsp"%>
 </body>
 </html>
