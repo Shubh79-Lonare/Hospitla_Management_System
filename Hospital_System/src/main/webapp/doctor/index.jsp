@@ -52,7 +52,7 @@
         <div class="col-md-5">
             <div class="card text-center p-4">
                 <i class="fas fa-user-md"></i>
-                <p class="fs-4">Doctor <br></p>
+                <p class="fs-4">Doctor <br>5</p>
                 <!-- <p class="number">5</p> -->
             </div>
         </div>

@@ -28,6 +28,7 @@ public class DoctorLogin extends HttpServlet {
 		if(doctor!=null) {
 			session.setAttribute("doctorObj", doctor);
 			response.sendRedirect("doctor/index.jsp");
+			System.out.println("trying to get index page");
 		}
 		else {
 			session.setAttribute("errorMsg", "Invalid Email Or Password");
