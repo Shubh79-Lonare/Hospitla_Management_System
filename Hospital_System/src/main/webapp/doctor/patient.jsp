@@ -82,13 +82,26 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);}
 									
 									<%-- <td><%=d.getPassword() %></td> --%>
 									<td>
+									<%
+									if("Pending".equals(ap.getStatus()))
+									{%>
+										<a href="comment.jsp?id=<%=ap.getId()%>"
+										class="btn btn-sm btn-warning"> Comment </a>
+									 <%}else{%>
+										 <a href="#"
+													class="btn btn-sm disabled"> Comment </a>
+										
+									<% }
 									
-									<a href="#"class="btn btn-sm btn-warning"> Comment </a>
+									%>
+									
+									
+									</td>
+								</tr>
+									
 										<%}
 									%>
-										 </td>
-								</tr>
-
+										 
 
 								
 

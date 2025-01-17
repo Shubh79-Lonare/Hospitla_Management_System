@@ -76,6 +76,12 @@
   	<description></description>
   	<servlet-class>com.user.servlet.AppointmentServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UpdateStatus</servlet-name>
+  	<display-name>UpdateStatus</display-name>
+  	<description></description>
+  	<servlet-class>com.doctor.servlet.UpdateStatus</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
   	<url-pattern>/UserRegistration</url-pattern>
@@ -123,5 +129,9 @@
   <servlet-mapping>
   	<servlet-name>AppointmentServlet</servlet-name>
   	<url-pattern>/AppointmentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateStatus</servlet-name>
+  	<url-pattern>/UpdateStatus</url-pattern>
   </servlet-mapping>
 </web-app>
