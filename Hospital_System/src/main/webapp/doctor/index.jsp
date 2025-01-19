@@ -2,6 +2,15 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page isELIgnored="false" %>
+	<%@page import="com.db.DBConnection"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="com.dao.AppointmentDAO"%>
+<%@page import="com.dao.DoctorDao"%>
+<%@page import="com.entity.User"%>
+<%@page import="com.entity.Doctor"%>
+<%@page import="com.entity.Appointment"%>
+<%@ page import="com.user.servlet.UserLogin"%>
+<%@ page import="java.util.List"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,11 +57,19 @@
 
 <div class="container">
     <div class="row justify-content-center">
+    <%
+    Doctor d=(Doctor)session.getAttribute("doctorObj");
+                DoctorDao dao=new DoctorDao(DBConnection.getConn());
+                
+                %>
         <!-- Doctor Card -->
         <div class="col-md-5">
             <div class="card text-center p-4">
                 <i class="fas fa-user-md"></i>
-                <p class="fs-4">Doctor <br>5</p>
+                <p class="fs-4">Doctor </p>
+                <p class="number"><br>
+                <%=dao.countDoctor() %>
+                
                 <!-- <p class="number">5</p> -->
             </div>
         </div>
@@ -61,7 +78,7 @@
         <div class="col-md-5">
             <div class="card text-center p-4">
                 <i class="fas fa-user"></i>
-                <p class="fs-4">Total Appointments <br>8</p>
+                <p class="fs-4">Total Appointments <br><%=dao.countAppointmentByDoctorId(d.getId()) %></p>
             </div>
         </div>
     </div>

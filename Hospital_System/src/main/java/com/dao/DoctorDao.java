@@ -188,4 +188,93 @@ public class DoctorDao {
 		
 	}
 	
+	
+	public int countDoctor() {
+		int i=0;
+		
+		try {
+			String sql= "select * from doctor";
+			PreparedStatement ps= conn.prepareStatement(sql);
+			ResultSet rs= ps.executeQuery();
+			while(rs.next()) {
+				i++;
+			}
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return i;
+	}
+	
+	
+	public int countUser() {
+		int i=0;
+		
+		try {
+			String sql= "select * from user_dtls";
+			PreparedStatement ps= conn.prepareStatement(sql);
+			ResultSet rs= ps.executeQuery();
+			while(rs.next()) {
+				i++;
+			}
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return i;
+	}
+	
+	
+	public int countAppointmentByDoctorId(int did) {
+		int i=0;
+		
+		try {
+			String sql= "select * from appointment where doctor_id=?";
+			PreparedStatement ps= conn.prepareStatement(sql);
+			ps.setInt(1, did);
+			ResultSet rs= ps.executeQuery();
+			while(rs.next()) {
+				i++;
+			}
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return i;
+	}
+	
+	public int countAppointment() {
+		int i=0;
+		
+		try {
+			String sql= "select * from appointment";
+			PreparedStatement ps= conn.prepareStatement(sql);
+			ResultSet rs= ps.executeQuery();
+			while(rs.next()) {
+				i++;
+			}
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return i;
+	}
+	
+	
+	public int countSpecialist() {
+		int i=0;
+		
+		try {
+			String sql= "select * from specialist";
+			PreparedStatement ps= conn.prepareStatement(sql);
+			ResultSet rs= ps.executeQuery();
+			while(rs.next()) {
+				i++;
+			}
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return i;
+	}
 }

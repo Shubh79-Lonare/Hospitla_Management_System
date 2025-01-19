@@ -15,8 +15,7 @@
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="index.jsp"><i
-						class="fa-sharp-duotone fa-solid fa-right-to-bracket"></i>HOME</a></li>
+					aria-current="page" href="index.jsp">HOME</a></li>
 
 				<li class="nav-item"><a class="nav-link active"
 					aria-current="page" href="doctor.jsp"> ADD DOCTOR</a></li>

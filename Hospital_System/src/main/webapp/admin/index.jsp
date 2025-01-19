@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@page import="com.db.DBConnection"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="com.dao.AppointmentDAO"%>
+<%@page import="com.dao.DoctorDao"%>
+<%@page import="com.entity.User"%>
+<%@page import="com.entity.Doctor"%>
+<%@page import="com.entity.Appointment"%>
+<%@ page import="com.user.servlet.UserLogin"%>
+<%@ page import="java.util.List"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,8 +77,12 @@
 			<div class="col-md-4">
 				<div class="card text-center p-3">
 					<i class="fas fa-user-md fa-3x"></i>
-					<p class="mt-4">Doctor</p>
-					<p class="number">5</p>
+					<p class="mt-4" >Doctor </p>
+					<p class="number"><%
+					DoctorDao dao = new DoctorDao(DBConnection.getConn());
+					int count=dao.countDoctor();
+					
+					%><%=count %></p>
 				</div>
 			</div>
 			<!-- User Card -->
@@ -77,7 +90,7 @@
 				<div class="card text-center p-3">
 					<i class="fas fa-user fa-3x"></i>
 					<p class="mt-4">User</p>
-					<p class="number">43</p>
+					<p class="number"><%=dao.countUser() %></p>
 				</div>
 			</div>
 			<!-- Total Appointment Card -->
@@ -85,7 +98,7 @@
 				<div class="card text-center p-3">
 					<i class="fas fa-calendar-check fa-3x"></i>
 					<p class="mt-4">Total Appointment</p>
-					<p class="number">453</p>
+					<p class="number"><%=dao.countAppointment() %></p>
 				</div>
 			</div>
 			<!-- Specialist Card -->
@@ -94,7 +107,7 @@
 					data-bs-target="#exampleModal">
 					<i class="fas fa-calendar-alt fa-3x"></i>
 					<p class="mt-4">Specialist</p>
-					<p class="number">34</p>
+					<p class="number"><%=dao.countSpecialist() %></p>
 				</div>
 			</div>
 		</div>
