@@ -88,6 +88,18 @@
   	<description></description>
   	<servlet-class>com.user.servlet.changePassword</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ChangePassDoc</servlet-name>
+  	<display-name>ChangePassDoc</display-name>
+  	<description></description>
+  	<servlet-class>com.doctor.servlet.ChangePassDoc</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditProfile</servlet-name>
+  	<display-name>EditProfile</display-name>
+  	<description></description>
+  	<servlet-class>com.doctor.servlet.EditProfile</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
   	<url-pattern>/UserRegistration</url-pattern>
@@ -143,5 +155,13 @@
   <servlet-mapping>
   	<servlet-name>changePassword</servlet-name>
   	<url-pattern>/changePassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ChangePassDoc</servlet-name>
+  	<url-pattern>/ChangePassDoc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditProfile</servlet-name>
+  	<url-pattern>/EditProfile</url-pattern>
   </servlet-mapping>
 </web-app>
