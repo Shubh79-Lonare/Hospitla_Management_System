@@ -75,7 +75,7 @@ style>.card {
 					height="500px">
 			</div>
 			<div class="carousel-item">
-				<img src="Images/doctor2.jpg" class="d-block w-100" alt="..."
+				<img src="Images/doctnew.jpg" class="d-block w-100" alt="..."
 					height="500px">
 			</div>
 		</div>
@@ -190,10 +190,10 @@ style>.card {
 			<!-- Team Member 2 -->
 			<div class="col-md-3 mb-4">
 				<div class="card shadow-sm">
-					<img src="Images/doctor2.jpg" class="card-img-top"
+					<img src="Images/doctnew.jpg" class="card-img-top"
 						alt="Dr. Siva Kumar" style="height: 300px; object-fit: cover;">
 					<div class="card-body">
-						<h5 class="card-title">Dr. Johny S</h5>
+						<h5 class="card-title">Dr. Joy Smit</h5>
 						<p class="card-text">(Chief Doctor)</p>
 					</div>
 				</div>
@@ -201,10 +201,10 @@ style>.card {
 			<!-- Team Member 3 -->
 			<div class="col-md-3 mb-4">
 				<div class="card shadow-sm">
-					<img src="Images/doc3.jpg" class="card-img-top"
+					<img src="Images/monikad.jpg" class="card-img-top"
 						alt="Dr. Niuise Paule" style="height: 300px; object-fit: cover;">
 					<div class="card-body">
-						<h5 class="card-title">Dr. Danni D</h5>
+						<h5 class="card-title">Dr. Monika D</h5>
 						<p class="card-text">(Chief Doctor)</p>
 					</div>
 				</div>
@@ -215,7 +215,7 @@ style>.card {
 					<img src="Images/doc4.jpg" class="card-img-top"
 						alt="Dr. Mathue Samuel" style="height: 300px; object-fit: cover;">
 					<div class="card-body">
-						<h5 class="card-title">Dr. Mathue Samuel</h5>
+						<h5 class="card-title">Dr. Madhav Mane</h5>
 						<p class="card-text">(Chief Doctor)</p>
 					</div>
 				</div>
